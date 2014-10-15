@@ -56,13 +56,14 @@ namespace Solstice
 
         #region SplashVariables
 
+        Texture2D tutScreen;
+        Texture2D splashScreen;
         TimeSpan splashCounter = TimeSpan.Zero;
 
         #endregion SplashVariables
 
         #region MenuVariables
 
-        Texture2D background1, background2, background3, background4, background5;
         SpriteFont menuFont;
 
         #endregion MenuVariables
@@ -89,8 +90,6 @@ namespace Solstice
         #region SFXs
 
         SoundEffect gunShot;
-        Song menuTheme;
-        Song gameTheme;
 
         #endregion SFXs
 
@@ -147,7 +146,6 @@ namespace Solstice
 
         public void initializeGame()
         {
-            MediaPlayer.Play(gameTheme);
             camera = new Camera(GraphicsDevice);
             map = new Map(random);
             map.Load(LargeTileSheet);
@@ -327,11 +325,6 @@ namespace Solstice
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            background1 = Content.Load<Texture2D>("minuet");
-            background2 = Content.Load<Texture2D>("bolero");
-            background3 = Content.Load<Texture2D>("serenade");
-            background4 = Content.Load<Texture2D>("nocturne");
-            background5 = Content.Load<Texture2D>("requiem");
 
             EnemySheet = Content.Load<Texture2D>("SpriteSheets/EnemySheet");
             LargeTileSheet = Content.Load<Texture2D>("SpriteSheets/LargeTileSheet");
@@ -342,10 +335,10 @@ namespace Solstice
             ItemSheet = Content.Load<Texture2D>("SpriteSheets/ItemSheet");
             ParticleSheet = Content.Load<Texture2D>("particle_base");
 
+            splashScreen = Content.Load<Texture2D>("Splash");
+            tutScreen = Content.Load<Texture2D>("Tutorial");
 
             gunShot = Content.Load<SoundEffect>("SFX/gunShot");
-            menuTheme = Content.Load<Song>("SFX/FillerMenu");
-            gameTheme = Content.Load<Song>("SFX/FillerMusic");
 
             menuFont = Content.Load<SpriteFont>("SpriteFonts/MenuFont");
             
@@ -366,8 +359,6 @@ namespace Solstice
             if ((currentKey.IsKeyDown(Keys.Enter) && previousKey.IsKeyUp(Keys.Enter)) || (currentMouse.LeftButton == ButtonState.Pressed && previousMouse.LeftButton == ButtonState.Released) || (splashCounter > TimeSpan.FromSeconds(2)))
             {
                 gameState = GameState.inMenu;
-                MediaPlayer.Play(menuTheme);
-                MediaPlayer.IsRepeating = true;
                 splashCounter = TimeSpan.Zero;
             }
 
@@ -382,14 +373,14 @@ namespace Solstice
                         menuSelection = MenuSelection.Tutorial;
                     break;
                     case MenuSelection.Tutorial:
-                        menuSelection = MenuSelection.Settings;
-                    break;
-                    case MenuSelection.Settings:
-                        menuSelection = MenuSelection.Scores;
-                    break;
-                    case MenuSelection.Scores:
                         menuSelection = MenuSelection.Exit;
                     break;
+                    //case MenuSelection.Settings:
+                    //    menuSelection = MenuSelection.Scores;
+                    //break;
+                    //case MenuSelection.Scores:
+                    //    menuSelection = MenuSelection.Exit;
+                    //break;
                     case MenuSelection.Exit:
                         menuSelection = MenuSelection.Play;
                     break;
@@ -403,14 +394,14 @@ namespace Solstice
                     case MenuSelection.Tutorial:
                     menuSelection = MenuSelection.Play;
                     break;
-                    case MenuSelection.Settings:
-                        menuSelection = MenuSelection.Tutorial;
-                    break;
-                    case MenuSelection.Scores:
-                        menuSelection = MenuSelection.Settings;
-                    break;
+                    //case MenuSelection.Settings:
+                    //    menuSelection = MenuSelection.Tutorial;
+                    //break;
+                    //case MenuSelection.Scores:
+                    //    menuSelection = MenuSelection.Settings;
+                    //break;
                     case MenuSelection.Exit:
-                        menuSelection = MenuSelection.Scores;
+                        menuSelection = MenuSelection.Tutorial;
                     break;
                 }
             else if (currentKey.IsKeyDown(Keys.Enter) && previousKey.IsKeyUp(Keys.Enter))
@@ -423,12 +414,12 @@ namespace Solstice
                     case MenuSelection.Tutorial:
                         gameState = GameState.inTutorial;
                         break;
-                    case MenuSelection.Settings:
-                        gameState = GameState.inSettings;
-                        break;
-                    case MenuSelection.Scores:
-                        gameState = GameState.inSettings;
-                        break;
+                    //case MenuSelection.Settings:
+                    //    gameState = GameState.inSettings;
+                    //    break;
+                    //case MenuSelection.Scores:
+                    //    gameState = GameState.inSettings;
+                    //    break;
                     case MenuSelection.Exit:
                         this.Exit();
                         break;
@@ -498,6 +489,14 @@ namespace Solstice
         {
         }
 
+        private void UpdateTutorial(GameTime gameTime)
+        {
+            if (currentKey.IsKeyDown(Keys.Enter) && previousKey.IsKeyUp(Keys.Enter))
+            {
+                gameState = GameState.inMenu;
+            }
+        }
+
         protected override void Update(GameTime gameTime)
         {
 
@@ -511,6 +510,10 @@ namespace Solstice
             if (gameState == GameState.inGame)
             {
                 UpdateGame(gameTime);
+            }
+            else if (gameState == GameState.inTutorial)
+            {
+                UpdateTutorial(gameTime);
             }
             else if (gameState == GameState.inTransition)
             {
@@ -549,15 +552,15 @@ namespace Solstice
 
         private void DrawSplash(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(background1, new Rectangle(0, 0, (int)dimensions.X, (int)dimensions.Y), Color.White);
+            spriteBatch.Draw(splashScreen, new Rectangle(0, 0, (int)dimensions.X, (int)dimensions.Y), Color.White);
 
         }
         private void DrawMenu(SpriteBatch spriteBatch)
         {
             String play = "Play";
             String tutorial = "Tutorial";
-            String settings = "Settings";
-            String score = "HighScores";
+            //String settings = "Settings";
+            //String score = "HighScores";
             String exit = "Quit";
 
 
@@ -570,18 +573,23 @@ namespace Solstice
                 spriteBatch.DrawString(menuFont, tutorial, new Vector2((graphics.PreferredBackBufferWidth / 2) - (menuFont.MeasureString(tutorial).X / 2), (graphics.PreferredBackBufferHeight / 2) + 30), Color.Red);
             else
                 spriteBatch.DrawString(menuFont, tutorial, new Vector2((graphics.PreferredBackBufferWidth / 2) - (menuFont.MeasureString(tutorial).X / 2), (graphics.PreferredBackBufferHeight / 2) + 30), Color.White);
+            
+            /*
             if (menuSelection == MenuSelection.Settings)
                 spriteBatch.DrawString(menuFont, settings, new Vector2((graphics.PreferredBackBufferWidth / 2) - (menuFont.MeasureString(settings).X / 2), (graphics.PreferredBackBufferHeight / 2) + 60), Color.Red);
             else
                 spriteBatch.DrawString(menuFont, settings, new Vector2((graphics.PreferredBackBufferWidth / 2) - (menuFont.MeasureString(settings).X / 2), (graphics.PreferredBackBufferHeight / 2) + 60), Color.White);
+            
             if (menuSelection == MenuSelection.Scores)
                 spriteBatch.DrawString(menuFont, score, new Vector2((graphics.PreferredBackBufferWidth / 2) - (menuFont.MeasureString(score).X / 2), (graphics.PreferredBackBufferHeight / 2) + 90), Color.Red);
             else
                 spriteBatch.DrawString(menuFont, score, new Vector2((graphics.PreferredBackBufferWidth / 2) - (menuFont.MeasureString(score).X / 2), (graphics.PreferredBackBufferHeight / 2) + 90), Color.White);
+            */
+
             if (menuSelection == MenuSelection.Exit)
-                spriteBatch.DrawString(menuFont, exit, new Vector2((graphics.PreferredBackBufferWidth / 2) - (menuFont.MeasureString(exit).X / 2), (graphics.PreferredBackBufferHeight / 2) + 120), Color.Red);
+                spriteBatch.DrawString(menuFont, exit, new Vector2((graphics.PreferredBackBufferWidth / 2) - (menuFont.MeasureString(exit).X / 2), (graphics.PreferredBackBufferHeight / 2) + 60), Color.Red);
             else
-                spriteBatch.DrawString(menuFont, exit, new Vector2((graphics.PreferredBackBufferWidth / 2) - (menuFont.MeasureString(exit).X / 2), (graphics.PreferredBackBufferHeight / 2) + 120), Color.White);
+                spriteBatch.DrawString(menuFont, exit, new Vector2((graphics.PreferredBackBufferWidth / 2) - (menuFont.MeasureString(exit).X / 2), (graphics.PreferredBackBufferHeight / 2) + 60), Color.White);
         }
         private void DrawGame(SpriteBatch spriteBatch)
         {
@@ -596,7 +604,12 @@ namespace Solstice
         }
         private void DrawSettings(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(background4, new Rectangle(0, 0, (int)dimensions.X, (int)dimensions.Y), Color.White);
+            //spriteBatch.Draw(background4, new Rectangle(0, 0, (int)dimensions.X, (int)dimensions.Y), Color.White);
+        }
+
+        private void DrawTutorial(SpriteBatch spriteBatch)
+        {
+            spriteBatch.Draw(tutScreen, new Rectangle(0, 0, (int)dimensions.X, (int)dimensions.Y), Color.White);
         }
 
         private void DrawTransition(SpriteBatch spriteBatch)
@@ -615,6 +628,10 @@ namespace Solstice
             if (gameState == GameState.inSplash)
             {
                 DrawSplash(spriteBatch);
+            }
+            else if (gameState == GameState.inTutorial)
+            {
+                DrawTutorial(spriteBatch);
             }
 
             else if (gameState == GameState.inMenu)
