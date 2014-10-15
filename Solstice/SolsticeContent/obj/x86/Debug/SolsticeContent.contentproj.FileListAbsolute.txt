@@ -1,0 +1,2 @@
+C:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\SolsticeContent\obj\x86\Debug\SolsticeContent.contentprojResolveAssemblyReference.cache
+S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\SolsticeContent\obj\x86\Debug\SolsticeContent.contentprojResolveAssemblyReference.cache

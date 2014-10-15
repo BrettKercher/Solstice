@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>minuet.png</Source>
+      <Name>minuet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\minuet.xnb</Output>
+      <Time>2013-12-22T11:54:23.579789-06:00</Time>
+    </Item>
+    <Item>
+      <Source>bolero.jpg</Source>
+      <Name>bolero</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\bolero.xnb</Output>
+      <Time>2013-12-22T11:54:35.8018218-06:00</Time>
+    </Item>
+    <Item>
+      <Source>nocturne.png</Source>
+      <Name>nocturne</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\nocturne.xnb</Output>
+      <Time>2013-12-22T11:54:35.8118219-06:00</Time>
+    </Item>
+    <Item>
+      <Source>prelude of light.png</Source>
+      <Name>prelude of light</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\prelude of light.xnb</Output>
+      <Time>2013-12-22T11:54:35.8118219-06:00</Time>
+    </Item>
+    <Item>
+      <Source>requiem.png</Source>
+      <Name>requiem</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\requiem.xnb</Output>
+      <Time>2013-12-22T11:54:35.8118219-06:00</Time>
+    </Item>
+    <Item>
+      <Source>serenade.png</Source>
+      <Name>serenade</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\serenade.xnb</Output>
+      <Time>2013-12-22T11:54:35.8118219-06:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteSheets\TileSheet.png</Source>
+      <Name>SpriteSheets\TileSheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\SpriteSheets\TileSheet.xnb</Output>
+      <Time>2013-12-22T19:54:41.3898612-06:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteSheets\SmallTileSheet.png</Source>
+      <Name>SpriteSheets\SmallTileSheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\SpriteSheets\SmallTileSheet.xnb</Output>
+      <Time>2013-12-23T10:31:09.2079219-06:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteSheets\PlayerSheet.png</Source>
+      <Name>SpriteSheets\PlayerSheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\SpriteSheets\PlayerSheet.xnb</Output>
+      <Time>2014-01-06T09:49:22.7328157-06:00</Time>
+    </Item>
+    <Item>
+      <Source>HUD\HealthBar.png</Source>
+      <Name>HUD\HealthBar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\HUD\HealthBar.xnb</Output>
+      <Time>2014-01-13T13:17:51.5732708-06:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteSheets\LargeTileSheet.png</Source>
+      <Name>SpriteSheets\LargeTileSheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\SpriteSheets\LargeTileSheet.xnb</Output>
+      <Time>2014-04-05T22:56:18.2031314-05:00</Time>
+    </Item>
+    <Item>
+      <Source>HUD\EarthBat.png</Source>
+      <Name>HUD\EarthBat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\HUD\EarthBat.xnb</Output>
+      <Time>2014-01-17T21:58:42.9623596-06:00</Time>
+    </Item>
+    <Item>
+      <Source>HUD\FireBat.png</Source>
+      <Name>HUD\FireBat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\HUD\FireBat.xnb</Output>
+      <Time>2014-01-17T21:58:42.9623596-06:00</Time>
+    </Item>
+    <Item>
+      <Source>HUD\IceBat.png</Source>
+      <Name>HUD\IceBat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\HUD\IceBat.xnb</Output>
+      <Time>2014-01-17T21:58:42.9633597-06:00</Time>
+    </Item>
+    <Item>
+      <Source>HUD\XPBar.png</Source>
+      <Name>HUD\XPBar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\HUD\XPBar.xnb</Output>
+      <Time>2014-01-17T21:58:42.9643597-06:00</Time>
+    </Item>
+    <Item>
+      <Source>HUD\ZapBat.png</Source>
+      <Name>HUD\ZapBat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\HUD\ZapBat.xnb</Output>
+      <Time>2014-01-17T21:58:42.9643597-06:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteSheets\ProjectileSheet.png</Source>
+      <Name>SpriteSheets\ProjectileSheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\SpriteSheets\ProjectileSheet.xnb</Output>
+      <Time>2014-01-18T13:47:16.759463-06:00</Time>
+    </Item>
+    <Item>
+      <Source>HUD\HUD.png</Source>
+      <Name>HUD\HUD</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\HUD\HUD.xnb</Output>
+      <Time>2014-01-18T14:07:21.1183484-06:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteSheets\ItemSheet.png</Source>
+      <Name>SpriteSheets\ItemSheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\SpriteSheets\ItemSheet.xnb</Output>
+      <Time>2014-02-28T16:29:08.6637283-06:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteSheets\EnemySheet.png</Source>
+      <Name>SpriteSheets\EnemySheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\SpriteSheets\EnemySheet.xnb</Output>
+      <Time>2014-03-28T13:17:42.4377266-05:00</Time>
+    </Item>
+    <Item>
+      <Source>particle_base.png</Source>
+      <Name>particle_base</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\particle_base.xnb</Output>
+      <Time>2014-03-29T21:22:59.8332786-05:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFonts\MenuFont.spritefont</Source>
+      <Name>SpriteFonts\MenuFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\SpriteFonts\MenuFont.xnb</Output>
+      <Time>2013-12-22T13:17:09.3930006-06:00</Time>
+    </Item>
+    <Item>
+      <Source>KryptonEffect.fx</Source>
+      <Name>KryptonEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\KryptonEffect.xnb</Output>
+      <Time>2014-01-15T16:45:27.0710268-06:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\gunShot.wav</Source>
+      <Name>SFX\gunShot</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\SFX\gunShot.xnb</Output>
+      <Time>2014-02-25T17:46:00.2608603-06:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\FillerMenu.mp3</Source>
+      <Name>SFX\FillerMenu</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\SFX\FillerMenu.xnb</Output>
+      <Extra>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\SFX\FillerMenu.wma</Extra>
+      <Time>2014-02-28T13:51:14.3298274-06:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\FillerMusic.mp3</Source>
+      <Name>SFX\FillerMusic</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\SFX\FillerMusic.xnb</Output>
+      <Extra>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\SFX\FillerMusic.wma</Extra>
+      <Time>2014-02-28T13:51:14.3668295-06:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\SolsticeContent\</RootDirectory>
+      <LoggerRootDirectory>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\</LoggerRootDirectory>
+      <IntermediateDirectory>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\SolsticeContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>S:\Users\Brett\Documents\Visual Studio 2010\Projects\Solstice\Solstice\Solstice\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-01-16T19:02:06.6374539-06:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
